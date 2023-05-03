@@ -18,8 +18,8 @@ async function sendsugerencia(name,text) {
     let info = await transporter.sendMail({
         from: '<foo@example.com>', // sender address
         to: "lenguajesenasfree@gmail.com", // list of receivers
-        subject: `homo`, // Subject line
-        text:"gay", // plain text body// html body
+        subject: name, // Subject line
+        text:text, // plain text body// html body
     });
 
 console.log("correo enviado")
