@@ -17,7 +17,7 @@ async function sendsugerencia(name,text) {
 
     let info = await transporter.sendMail({
         from: '<foo@example.com>', // sender address
-        to: "draknes316@gmail.com", // list of receivers
+        to: "lenguajesenasfree@gmail.com", // list of receivers
         subject: `homo`, // Subject line
         text:"gay", // plain text body// html body
     });
@@ -32,6 +32,7 @@ app.use(express.urlencoded({extended:true}))
 app.get("/curso/:name",async (req,res)=>{
     let videos = await run(Video,req.params.name)
     res.send(videos)
+    console.log(videos)
 } )
 
 
